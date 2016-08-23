@@ -24,8 +24,11 @@ bla
 ## Step 2: Create a virtual environment
 
 ```
+# Install the virtualenv module in Python
 pip install virtualenv
 # Enter to the working directory
+cd virtualenv
+# Create the virtual environment using this command
 virtualenv myenv
 ``` 
 
@@ -43,4 +46,19 @@ pip install --upgrade pip
 # Install Django
 pip install django~=1.9.0
 ```
- 
+## Step 5: Create your first Django project
+In this tutorial we will create a simple blog.
+
+Start Djando project by running the following command with the virtual environment activated  (this command will create the directory structure of a Django project). The period "**.**" is crucial because it tells the script to install Django in your current directory.
+```
+django-admin startproject mysite .
+```
+Now you will have a directory structure like this:
+django-tutorial
+├───manage.py
+└───mysite
+        └───settings.py
+        urls.py
+        wsgi.py
+        __init__.py
+
